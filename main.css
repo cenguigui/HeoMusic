@@ -26,6 +26,19 @@
   --heo-snackbar-time: 5s;
 }
 
+/* 全局字体 */
+@font-face {
+	font-family: 'GuiguiFontStyle';
+	/*src: url("../fonts/fonts.woff2") format("woff2");*/
+	/*src: url("https://cache.gumengya.com/blog/fonts/fonts.woff2") format("woff2");*/
+	src: url("https://jsd.onmicrosoft.cn/gh/cenguigui/cdn@master/fonts/fonts.woff2") format("woff2");
+	font-display: swap;
+}
+
+*{
+	font-family: 'GuiguiFontStyle' !important;
+}
+
 #page {
   border: 0;
   box-shadow: none !important;
@@ -444,13 +457,14 @@ body .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.apla
     position: fixed;
     z-index: 1002;
     width: 100%;
+    /* height: 400px; */
     bottom: 0px;
     left: 0;
     background: var(--heo-white);
     border-radius: 16px 16px 0px 0px;
     padding: 15px 0px;
     max-width: 100%;
-    height: calc(var(--vh) - 200px);
+    height: calc(var(--vh) - 420px);
   }
   #heoMusic-page .aplayer-list.aplayer-list-hide {
     bottom: -100% !important;
@@ -516,7 +530,7 @@ body .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.apla
     left: 0;
     right: 0;
     top: 0;
-    height: calc(var(--vh) - 200px);
+    height: calc(var(--vh) - 264px);
   }
   #heoMusic-page .aplayer-info .aplayer-lrc {
     margin-top: 0;
